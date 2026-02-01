@@ -1,17 +1,90 @@
-# SQL-Profile
-## Tibero(RDBMS)의 sql profile 기능 개선 프로젝트
-+ SQL Profile 기능 설명
-  + plan 변경으로 성능 저하 발생시 해당 SQL Profile(미리 저장해둔 플랜)을 찾아 원하는 plan으로 쿼리가 샐행되도록 하는 기능
-  +  plan이 변경되지 않은 경우라도, SQL에 힌트를 넣어 outline을 만들고 import sql profile을 수행하면, 힌트 전 sql이 들어왔을 때, 힌트가 사용된 플랜으로 풀리도록 하는 기능
-  +   [ORACLE SQL PROFILE](https://docs.oracle.com/database/121/TGSQL/tgsql_profiles.htm) 과 같은 기능이므로 자세한 설명은 링크 참조
-## Tibero에 추가해야할 기능
-+ Tibero에 있는 SQL Profile 기능은 일반 장애(단순 성능 저하 및 플랜 변경)에 대해서는 대응할 수 있지만 심각한 장애(DB down, 재부팅, 심각한 성능저하)에 대해서는 대응 불가
-+ SQL Profile(장애를 대비한 플랜 저장)을 메모리에서만 관리하고 있어 메모리 관련 장애가 발생하면 SQL Profile을 사용할 수 없음
+🧠 Database Engineer Portfolio
 
-## Member
-+ 1인 프로젝트
-## Milestone
-+ the first week : Tibero SQL PROFILE 로직에 대한 전반적인 조사
-+ the second week : 기능 개선 로직 설계 및 개발
-+ the third week : SQL Profile 기능 개발 완성
-+ the last week : SQL Profile 기능 테스트 및 고객사(KT) 시현
+Summary
+Database Engineer with hands-on experience in RDBMS core feature development, SQL optimization, and query optimizer enhancements.
+Worked on production-grade database engine features at Tmaxgroup, focusing on performance, correctness, and enterprise reliability.
+	•	Specialized in SQL Tuning, Query Plan Management, Statistics Collection
+	•	Deep understanding of cost-based optimization and execution planning
+	•	Proven performance improvements in real customer environments (banks, enterprises)
+
+
+🔹 SQL Tuning Advisor (DBMS Internal Feature)
+
+Overview
+Implemented internal SQL Tuning support features that analyze query structure, execution plans, and object statistics to recommend performance improvements without changing query semantics.
+
+Key Contributions
+	•	Designed and implemented:
+	•	create_tuning_task
+	•	execute_tuning_task
+	•	Built metadata management for:
+	•	SQL statements
+	•	Execution plans
+	•	Related database objects
+	•	Implemented logic to:
+	•	Detect missing / stale statistics
+	•	Analyze query structure
+	•	Generate alternative SQL with significantly improved performance
+	•	Passed LIMITED_SCOPE test
+
+Impact
+	•	Enabled automated SQL tuning inside the DB engine
+	•	Improved optimizer decision accuracy
+	•	Reduced query execution time in production workloads
+
+Skills
+RDBMS · SQL · PL/SQL · C · Query Optimizer
+
+🔹 SQL Plan Management (SPM)
+
+Overview
+Developed and stabilized SQL Plan Management features to ensure predictable and optimal query execution.
+
+Key Features Implemented
+	•	OPTIMIZER_USE_SQL_PLAN_BASELINES
+	•	Selects the lowest-cost plan among stored baselines
+	•	EVOLVE_SQL_PLAN_BASELINE
+	•	Re-enables previously unused plans for reuse
+
+Result
+	•	Feature completed and shipped as part of the product
+	•	Improved execution plan stability for enterprise customers
+
+Skills
+RDBMS · SQL · PL/SQL · C
+
+🔹 Index Statistics Collection Accuracy Improvement
+
+Problem
+	•	Index statistics (especially clustering factor) were highly inaccurate
+	•	Caused serious performance degradation in index scan operations
+
+Solution
+	•	Identified fundamental flaw in existing statistics collection queries
+	•	Designed a new internal execution node exclusively for index statistics
+	•	Routed index statistics collection through the new logic only
+
+Result
+	•	Achieved >90% accuracy
+	•	Resolved index-scan-related performance issues in production
+
+Skills
+Query Execution Engine · Statistics · RDBMS Internals · C
+
+🔹 Join Performance Optimization
+
+Improvements
+	•	Enhanced join selectivity calculation for PK-FK joins
+→ 5s → 1s
+	•	Optimized join filter logic with OR conditions
+→ 3s → 0.8s
+	•	Critical path optimization
+→ 827 ms → 27 ms
+
+Skills
+Cost-Based Optimization · Join Algorithms · Query Planning
+
+🔹 Additional Statistics Enhancements
+	•	Sampling accuracy improvements
+	•	Handling skewed data distributions
+	•	Partitioned table statistics stabilization
