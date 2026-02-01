@@ -1,7 +1,7 @@
 # Overview
 
 Database Engineer with experience in Database Engineer with experience in **RDBMS core engineering**  
-![Tibero](https://img.shields.io/badge/Tibero-RDBMS-red), SQL optimization, and query optimizer development** at an enterprise database vendor.
+![Tibero](https://img.shields.io/badge/Tibero-RDBMS-red), SQL optimization, and query optimizer development at an enterprise database vendor.
 
 - Developed internal **SQL Tuning Advisor** and **SQL Plan Management (SPM)** features
 - Improved query performance through **cost-based optimization and statistics accuracy**
