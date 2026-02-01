@@ -14,9 +14,9 @@ RDBMS Internals · SQL / PL/SQL · Cost-Based Optimization · Execution Plans ·
 > This repository documents system design, internal logic, and performance impact.
 
 # Case Studies
-[![SQL Plan Management](https://img.shields.io/badge/Docs-Cost%20Optimization-2ea44f?style=for-the-badge)](./sql-plan-management.md)
-[![SQL Tuning Advisor](https://img.shields.io/badge/Docs-Architecture-0969da?style=for-the-badge)](./sql-tuning-advisor.md)
-[![Index Statistics Improvement](https://img.shields.io/badge/Docs-Architecture-0969da?style=for-the-badge)](./index-statistics-improvement.md)
+- [![SQL Plan Management](https://img.shields.io/badge/Docs-Cost%20Optimization-2ea44f?style=for-the-badge)](./sql-plan-management.md)
+- [![SQL Tuning Advisor](https://img.shields.io/badge/Docs-Architecture-0969da?style=for-the-badge)](./sql-tuning-advisor.md)
+- [![Index Statistics Improvement](https://img.shields.io/badge/Docs-Architecture-0969da?style=for-the-badge)](./index-statistics-improvement.md)
 ---
 
 # Architecture
