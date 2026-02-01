@@ -18,3 +18,6 @@ RDBMS Internals · SQL / PL/SQL · Cost-Based Optimization · Execution Plans ·
 [![SQL Tuning Advisor](https://img.shields.io/badge/Docs-Architecture-0969da?style=for-the-badge)](./sql-tuning-advisor.md)
 [![Index Statistics Improvement](https://img.shields.io/badge/Docs-Architecture-0969da?style=for-the-badge)](./index-statistics-improvement.md)
 ---
+
+# Architecture
+[![Index Statistics Improvement](https://img.shields.io/badge/Docs-Architecture-0969da?style=for-the-badge)](./architecture-overview.md)
