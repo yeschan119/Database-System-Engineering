@@ -1,6 +1,7 @@
 # Overview
 
-Database Engineer with experience in **RDBMS (<strong><span style="color:#e74c3c">Tibero</span></strong>) core engineering, SQL optimization, and query optimizer development** at an enterprise database vendor.
+Database Engineer with experience in **RDBMS core engineering**  
+![Tibero](https://img.shields.io/badge/Tibero-RDBMS-red) core engineering, SQL optimization, and query optimizer development** at an enterprise database vendor.
 
 - Developed internal **SQL Tuning Advisor** and **SQL Plan Management (SPM)** features
 - Improved query performance through **cost-based optimization and statistics accuracy**
@@ -19,7 +20,7 @@ RDBMS Internals · SQL / PL/SQL · Cost-Based Optimization · Execution Plans ·
 - [![Index Statistics Improvement](https://img.shields.io/badge/Docs-Index%20Statistics%20Improvement-0969da?style=for-the-badge)](./index-statistics-improvement.md)
 ---
 # Architecture
-[![Index Statistics Improvement](https://img.shields.io/badge/Docs-Architecture-0969da?style=for-the-badge)](./architecture-overview.md)
+- [![Index Statistics Improvement](https://img.shields.io/badge/Docs-Architecture-0969da?style=for-the-badge)](./architecture-overview.md)
 ---
 # Production Issue Resolution for Enterprise RDBMS Clients
 
