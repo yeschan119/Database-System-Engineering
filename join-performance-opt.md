@@ -1,14 +1,14 @@
-Case Study: Join Performance Optimization
+# Case Study: Join Performance Optimization
 
-Context  
+## Context  
 Join cardinality misestimation caused inefficient execution plans, particularly in PK-FK joins and complex OR-filtered join conditions.
 
-Problem  
+## Problem  
 - Inaccurate join selectivity calculation for PK-FK relationships  
 - Suboptimal plan generation when OR conditions were present in join filters  
 - Resulting in unnecessary full scans and high execution time  
 
-Implementation  
+## Implementation  
 
 1️⃣ PK-FK Join Selectivity Enhancement  
 - Redesigned join selectivity calculation logic for primary-key / foreign-key relationships  
@@ -20,7 +20,7 @@ Implementation
 - Enhanced predicate selectivity handling  
 - Improved plan branching and cost comparison logic  
 
-Outcome  
+## Outcome  
 
 - PK-FK Join Query Execution Time:  
   5s → 1s  
