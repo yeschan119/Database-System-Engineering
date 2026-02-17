@@ -16,7 +16,7 @@ RDBMS Internals · SQL / PL/SQL · Cost-Based Optimization · Execution Plans ·
 ---
 # Case Studies
 - [![SQL Plan Management](https://img.shields.io/badge/Docs-SQL%20Plan%20Management-2ea44f?style=for-the-badge)](./sql-plan-management.md)
-- [![Join Performance Optimization](https://img.shields.io/badge/Docs-SQL%20Tuning%20Advisor-0969da?style=for-the-badge)](./join-performance-opt.md)
+- [![Join Performance Optimization](https://img.shields.io/badge/Docs-Join%20Performance%20Optimization-0969da?style=for-the-badge)](./join-performance-opt.md)
 - [![Index Statistics Improvement](https://img.shields.io/badge/Docs-Index%20Statistics%20Improvement-0969da?style=for-the-badge)](./index-statistics-improvement.md)
 ---
 # Architecture
