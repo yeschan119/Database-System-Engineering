@@ -28,7 +28,7 @@ Join cardinality misestimation caused inefficient execution plans, particularly 
 - OR-Condition Join Query Execution Time:  
   3s → 0.8s  
 
-- Targeted feature segment improvement:  
+- Table Partition Pruning improvement:  
   827.13 ms → 27.24 ms  
 
 Resulted in significantly improved join plan quality and optimizer decision stability within the RDBMS engine.
