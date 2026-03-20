@@ -1,6 +1,6 @@
 # Overview
 
-[한국어 🇰🇷](README.ko.md)
+[한국어 🇰🇷](README.md)
 
 Database Engineer with experience in Database Engineer with experience in **RDBMS core engineering**  
 [![Tibero](https://img.shields.io/badge/RDBMS-Tibero-red)](https://docs.tibero.com/tibero/en/getting-started/introduction/introduction-guide/introduction-to-tibero), SQL optimization, and query optimizer development at an enterprise database vendor.
