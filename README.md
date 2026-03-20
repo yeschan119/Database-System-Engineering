@@ -3,6 +3,8 @@
 엔터프라이즈 데이터베이스 벤더에서 **RDBMS 코어 엔지니어링** 경험을 가진 Database Engineer  
 [![Tibero](https://img.shields.io/badge/RDBMS-Tibero-red)](https://docs.tibero.com/tibero/en/getting-started/introduction/introduction-guide/introduction-to-tibero)
 
+[English 🇬🇧](README.en.md)
+
 SQL 최적화 및 Query Optimizer 개발을 수행하였다.
 
 - 내부 **SQL Tuning Advisor** 및 **SQL Plan Management (SPM)** 기능 개발
